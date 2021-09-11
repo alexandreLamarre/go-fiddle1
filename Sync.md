@@ -95,3 +95,12 @@ c.Broadcast()
 - Wait suspends the execution of goroutine
 - Signal wakes on goroutine waiting on c.
 - Broadcast wakes all goroutines waiting on that condition
+
+### Sync.Once
+
+- Run one time initializatin functions
+```
+once.Do(funcValue)
+```
+
+- sync.Once ensure that only one call to Do ever calls the function passed in - even on different goroutines
