@@ -104,3 +104,6 @@ once.Do(funcValue)
 ```
 
 - sync.Once ensure that only one call to Do ever calls the function passed in - even on different goroutines
+
+### sync.Pool 
+- create and make available a pool of things for use
